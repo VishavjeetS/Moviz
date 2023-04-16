@@ -5,7 +5,7 @@ A new Flutter project.
 # Sample Images
 
 #Login/Sign up
-![IMG-20230416-WA0024](https://user-images.githubusercontent.com/71689717/232322753-429ba71e-2952-4480-84d7-83b8194478de.jpg) ![IMG-20230416-WA0025](https://user-images.githubusercontent.com/71689717/232322757-cf2db005-f087-487d-a064-063183cb0092.jpg)
+![IMG-20230416-WA0024](https://user-images.githubusercontent.com/71689717/232322753-429ba71e-2952-4480-84d7-83b8194478de.jpg =250x250) ![IMG-20230416-WA0025](https://user-images.githubusercontent.com/71689717/232322757-cf2db005-f087-487d-a064-063183cb0092.jpg =250x250)
 
 #Popular Section
 ![IMG-20230416-WA0029](https://user-images.githubusercontent.com/71689717/232322793-e60b9dba-5a9a-4a1c-8d6a-34a311e5cb6a.jpg)
