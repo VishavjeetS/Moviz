@@ -4,7 +4,7 @@ A new Flutter project.
 
 # Sample Images
 
-#Login/Sign up
+# Login/Sign up
 
 <p float="left">
   <img src=https://user-images.githubusercontent.com/71689717/232322753-429ba71e-2952-4480-84d7-83b8194478de.jpg width="200" height="400"/>
@@ -12,22 +12,30 @@ A new Flutter project.
   <img src=https://user-images.githubusercontent.com/71689717/232322757-cf2db005-f087-487d-a064-063183cb0092.jpg width="200" height="400"/>
 </p>
 
-#Popular Section
-<img src=https://user-images.githubusercontent.com/71689717/232322793-e60b9dba-5a9a-4a1c-8d6a-34a311e5cb6a.jpg width="200" height="400"/>
+# Popular Section
+<p float="left">
+  <img src=https://user-images.githubusercontent.com/71689717/232322793-e60b9dba-5a9a-4a1c-8d6a-34a311e5cb6a.jpg width="200" height="400"/>
+</p>
 
-#Top Rated Section
+# Top Rated Section
 
-<img src=https://user-images.githubusercontent.com/71689717/232322819-69e0d443-1aba-41ad-a62f-d288d4b1cecd.jpg width="200" height="400"/>
+<p float="left">
+  <img src=https://user-images.githubusercontent.com/71689717/232322819-69e0d443-1aba-41ad-a62f-d288d4b1cecd.jpg width="200" height="400"/>
+</p>
 
-#Favorite Section
+# Favorite Section
 
-<img src=https://user-images.githubusercontent.com/71689717/232322855-e4cb0dd0-aa7c-46dd-a36d-be883a8d1ebd.jpg width="200" height="400"/>
+<p float="left">
+  <img src=https://user-images.githubusercontent.com/71689717/232322855-e4cb0dd0-aa7c-46dd-a36d-be883a8d1ebd.jpg width="200" height="400"/>
+</p>
 
-#Profile Section
+# Profile Section
+ 
+ <p float="left">
+  <img src=https://user-images.githubusercontent.com/71689717/232322871-995b9a3d-63d6-43b9-bf89-5671e06b65b5.jpg width="200" height="400"/>
+</p>
 
-<img src=https://user-images.githubusercontent.com/71689717/232322871-995b9a3d-63d6-43b9-bf89-5671e06b65b5.jpg width="200" height="400"/>
-
-#Detail Section
+# Detail Section
 
 <p float="left">
 <img src=https://user-images.githubusercontent.com/71689717/232322902-4c6bd39d-f340-4330-8a1f-7d9bc4f84bc0.jpg width="200" height="400"/>
