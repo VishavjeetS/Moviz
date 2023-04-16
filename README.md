@@ -23,7 +23,7 @@ A new Flutter project.
   <img src=https://user-images.githubusercontent.com/71689717/232322819-69e0d443-1aba-41ad-a62f-d288d4b1cecd.jpg width="200" height="400"/>
 </p>
 
-# Favorite Section
+# Favorites Section
 
 <p float="left">
   <img src=https://user-images.githubusercontent.com/71689717/232322855-e4cb0dd0-aa7c-46dd-a36d-be883a8d1ebd.jpg width="200" height="400"/>
