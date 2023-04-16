@@ -1,4 +1,4 @@
-# torrentx
+# Moviz
 
 A new Flutter project.
 
