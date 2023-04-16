@@ -8,7 +8,7 @@ A new Flutter project.
 
 <p float="left">
   <img src=https://user-images.githubusercontent.com/71689717/232322753-429ba71e-2952-4480-84d7-83b8194478de.jpg width="200" height="400"/>
-  <span>5</span>
+  <span> </span>
   <img src=https://user-images.githubusercontent.com/71689717/232322757-cf2db005-f087-487d-a064-063183cb0092.jpg width="200" height="400"/>
 </p>
 
