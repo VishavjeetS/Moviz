@@ -1,6 +1,6 @@
 # Moviz
 
-A new Flutter project.
+The Moviz application is built with Flutter. It uses the TMDB API to authenticate and mark items as favorites. To manage state, this application uses Getx Controller.
 
 # Sample Images
 
