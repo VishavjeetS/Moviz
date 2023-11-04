@@ -44,6 +44,9 @@ dependencies:
   webview_flutter: ^3.0.4
   google_fonts: ^2.0.0
   flutter_rating_bar: ^4.0.1
+  shrink_sidemenu: ^2.0.0+2-null-safety
+  liquid_ui: ^1.0.0+9
+  youtube_player_flutter: ^8.0.0
 
 dev_dependencies:
   flutter_test:

@@ -171,7 +171,7 @@ class Results {
     _originalLanguage = json['original_language'];
     _title = json['title'];
     _backdropPath = json['backdrop_path'];
-    _popularity = json['popularity'];
+    _popularity = double.parse(json['popularity'].toString());
     _voteCount = json['vote_count'];
     _video = json['video'];
     _voteAverage = json['vote_average'];

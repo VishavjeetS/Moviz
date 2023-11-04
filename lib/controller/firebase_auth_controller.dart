@@ -19,6 +19,14 @@ class AuthController extends GetxController {
     }
   }
 
+  Future<void> changeDisplayName(String name) async {
+    await user.updateDisplayName(name).then((value) {
+      Get.snackbar("Success", "Display name changed successfully");
+    }).catchError((error) {
+      Get.snackbar("Error", error.toString());
+    });
+  }
+
   Future<void> checkUserSessionId() async {
     if (_auth.currentUser != null) {
       final _snapshot = await _database.child("users/${user.uid}").get();

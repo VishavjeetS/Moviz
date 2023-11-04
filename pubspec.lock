@@ -190,6 +190,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_inappwebview:
+    dependency: transitive
+    description:
+      name: flutter_inappwebview
+      sha256: f73505c792cf083d5566e1a94002311be497d984b5607f25be36d685cf6361cf
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.7.2+3"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -272,6 +280,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.1"
+  liquid_ui:
+    dependency: "direct main"
+    description:
+      name: liquid_ui
+      sha256: "4fc8c5d728f6b53397ac399f0f38e9bcf4c24de9046889b819887aa95c4c2548"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0+9"
   matcher:
     dependency: transitive
     description:
@@ -384,6 +400,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.4"
+  shrink_sidemenu:
+    dependency: "direct main"
+    description:
+      name: shrink_sidemenu
+      sha256: "556436717d004ed4573522dcc8772da50f4b7ed3b3a238c0c0e11bc265a0c95a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0+2-null-safety"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -589,6 +613,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.2.0+3"
+  youtube_player_flutter:
+    dependency: "direct main"
+    description:
+      name: youtube_player_flutter
+      sha256: "72d487e1a1b9155a2dc9d448c137380791101a0ff623723195275ac275ac6942"
+      url: "https://pub.dev"
+    source: hosted
+    version: "8.1.2"
 sdks:
   dart: ">=2.18.0 <3.0.0"
-  flutter: ">=2.10.0"
+  flutter: ">=3.0.0"

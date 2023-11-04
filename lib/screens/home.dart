@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shrink_sidemenu/shrink_sidemenu.dart';
 import 'package:torrentx/navigation/favourite_movies.dart';
 import 'package:torrentx/navigation/profile.dart';
 import 'package:torrentx/navigation/top_rated_movies.dart';
+import 'package:torrentx/components/custom_search.dart';
 import '../controller/firebase_auth_controller.dart';
 import '../navigation/popular_movies.dart';
 
@@ -29,6 +31,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    // final GlobalKey<SideMenuState> _sideMenuKey = GlobalKey<SideMenuState>();
     final List<BottomNavigationBarItem> items = [
       BottomNavigationBarItem(
           icon: const Icon(Icons.hub),
@@ -56,9 +59,26 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.downloading_outlined),
-        title: SearchBox(),
+        leading: IconButton(
+            onPressed: () {
+              // final _state = _sideMenuKey.currentState!;
+              // if(_state.isOpened){
+              //   _state.closeSideMenu();
+              // }
+              // else{
+              //   _state.openSideMenu();
+              // }
+            },
+            icon: const Icon(Icons.menu)),
+        // title: SearchBox(),
+        title: const Text("TorrentX"),
         actions: [
+          IconButton(
+            onPressed: () {
+              Get.to(() => const SearchPage());
+            },
+            icon: const Icon(Icons.search),
+          ),
           IconButton(
             onPressed: () {
               _authController.logoutUser();
@@ -114,7 +134,9 @@ class _HomeState extends State<Home> {
                   : const Text(""),
               hintText: 'Search...',
               border: InputBorder.none),
-          focusNode:  FocusNode(),
+          focusNode: FocusNode(
+            canRequestFocus: true,
+          ),
           onChanged: (query) => updateQuery(query),
         ),
       ),

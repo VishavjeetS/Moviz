@@ -10,6 +10,7 @@ class TmdbAuthController extends GetxController {
   final _apiKey = "8f7e8262951851e9cd40e68b53f7df38";
   final _databaseRef = FirebaseDatabase.instance.ref();
   final _auth = FirebaseAuth.instance;
+  String sessionId = '';
   RxBool isValid = false.obs;
   RxBool sessionIdRetrieved = false.obs;
 
@@ -19,11 +20,36 @@ class TmdbAuthController extends GetxController {
       final _data = event.snapshot;
       final _values = _data.value as Map<dynamic, dynamic>;
       if (_values["sessionId"].toString().isNotEmpty) {
+        sessionId = _values["sessionId"].toString();
         isValid.value = true;
       } else {
         isValid.value = false;
       }
     });
+  }
+
+  Future<void> logoutSession() async{
+    final _uid = _auth.currentUser!.uid;
+    final _sessionId = sessionId;
+    final _logoutUrl = 'https://api.themoviedb.org/3/authentication/session?api_key=$_apiKey';
+    try{
+      final response = await http.delete(Uri.parse(_logoutUrl), body: {
+        'session_id': _sessionId,
+      });
+      if(response.statusCode == 200){
+        isValid.value = false;
+        _databaseRef.child('users').child(_uid).update({
+          'sessionId': '',
+        }).whenComplete(() {
+          Get.offAllNamed('/home');
+          Get.snackbar("Success", "Logged out successfully");
+        });
+      }else{
+        throw Exception('Failed to logout session - ${response.statusCode}');
+      }
+    }catch(_error){
+      throw Exception('Failed to logout session - $_error');
+    }
   }
 
   Future<String> getAccount() async{
